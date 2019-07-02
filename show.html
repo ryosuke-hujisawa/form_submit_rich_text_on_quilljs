@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="example.css">
+  <title>get html from quilljs</title>
+</head>
+<body>
+
+<div id="scrolling-container">
+  <div id="quill-container">
+    <h2 id="name"></h2>
+    <br>
+    <div id="text"></div>
+</div>
+
+<script  src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+<script type="text/javascript" src="index.js"></script>
+<script>
+$('#name').html(getParam('name'));  
+$('#text').html(getParam('text'));
+</script>
+</body>
+</html>
